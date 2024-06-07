@@ -1,0 +1,79 @@
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: yellow;
+}
+
+.app {
+  background-color: red;
+}
+
+.app_header {
+  width: calc(100% - 40px); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* padding: 10px 20px;  */
+  box-sizing: border-box;
+  /* margin: 20px auto; */
+}
+
+.close_icon {
+  position: absolute;
+  left: 20px; 
+  height: 30px;
+  cursor: pointer;
+}
+
+.gmoney_logo {
+  height: 30px 
+}
+
+.payment_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 수직 중앙 정렬 */
+  align-items: center; /* 수평 중앙 정렬 */
+  height: 100%; /* 부모 컨테이너의 전체 높이 사용 */
+}
+
+.payment-text {
+  font-size: 24px; /* 문구 크기 조정 */
+}
+
+@media (max-width: 768px) {
+  .app_header {
+    width: calc(100% - 20px); 
+    /* margin: 30px auto;  */
+    /* padding: 5px 10px;  */
+  }
+
+  .close_icon {
+    left: 10px; 
+    height: 25px; 
+  }
+
+  .gmoney_logo {
+    height: 30px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .app_header {
+    width: calc(100% - 10px); 
+    margin: 20px auto; 
+    padding: 2px 5px; 
+    background-color: green;
+  }
+
+  .close_icon {
+    left: 20px; 
+    height: 25px; 
+  }
+
+  .gmoney_logo {
+    height: 35px; 
+  }
+}

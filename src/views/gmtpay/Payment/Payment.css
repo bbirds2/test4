@@ -1,0 +1,53 @@
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: yellow;
+}
+
+.app_header {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.close_icon {
+  position: absolute;
+  left: 20px; 
+  height: 30px;
+  cursor: pointer;
+}
+
+.gmoney_logo {
+  height: 30px 
+}
+
+.payment_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  height: 100%; 
+}
+
+.payment-text {
+  font-size: 24px;
+}
+
+/* @media (max-width: 480px) {
+  .app_header {
+    width: calc(100% - 10px); 
+    margin: 20px auto; 
+    padding: 2px 5px; 
+    background-color: green;
+  }
+
+  .close_icon {
+    left: 20px; 
+    height: 25px; 
+  }
+
+  .gmoney_logo {
+    height: 35px; 
+  }
+} */
